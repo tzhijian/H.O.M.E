@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE46BE0E1ED5F4CD000C5F9F /* LazyDoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46BE0D1ED5F4CD000C5F9F /* LazyDoorViewController.swift */; };
+		BE46BE101ED5F51A000C5F9F /* PrinterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE46BE0F1ED5F51A000C5F9F /* PrinterViewController.swift */; };
 		BE49B07B1EC0725500886933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49B07A1EC0725500886933 /* AppDelegate.swift */; };
 		BE49B07D1EC0725500886933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49B07C1EC0725500886933 /* ViewController.swift */; };
 		BE49B0801EC0725500886933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE49B07E1EC0725500886933 /* Main.storyboard */; };
 		BE49B0821EC0725500886933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE49B0811EC0725500886933 /* Assets.xcassets */; };
 		BE49B0851EC0725500886933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE49B0831EC0725500886933 /* LaunchScreen.storyboard */; };
+		BE49B08D1EC072A100886933 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49B08C1EC072A100886933 /* MenuCollectionViewCell.swift */; };
+		BE49B08F1EC0B27200886933 /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49B08E1EC0B27200886933 /* CheckInViewController.swift */; };
+		BEBCC57A1EC1A2DC00FB4E2F /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBCC5791EC1A2DC00FB4E2F /* CalenderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE46BE0D1ED5F4CD000C5F9F /* LazyDoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LazyDoorViewController.swift; sourceTree = "<group>"; };
+		BE46BE0F1ED5F51A000C5F9F /* PrinterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrinterViewController.swift; sourceTree = "<group>"; };
 		BE49B0771EC0725500886933 /* H.O.M.E.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H.O.M.E.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE49B07A1EC0725500886933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE49B07C1EC0725500886933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		BE49B0811EC0725500886933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE49B0841EC0725500886933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE49B0861EC0725500886933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE49B08C1EC072A100886933 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE49B08E1EC0B27200886933 /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		BEBCC5791EC1A2DC00FB4E2F /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE46BE111ED5F523000C5F9F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE49B07C1EC0725500886933 /* ViewController.swift */,
+				BE49B08E1EC0B27200886933 /* CheckInViewController.swift */,
+				BEBCC5791EC1A2DC00FB4E2F /* CalenderViewController.swift */,
+				BE46BE0D1ED5F4CD000C5F9F /* LazyDoorViewController.swift */,
+				BE46BE0F1ED5F51A000C5F9F /* PrinterViewController.swift */,
+				BE49B08C1EC072A100886933 /* MenuCollectionViewCell.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		BE49B06E1EC0725500886933 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				BE49B07A1EC0725500886933 /* AppDelegate.swift */,
-				BE49B07C1EC0725500886933 /* ViewController.swift */,
+				BE46BE111ED5F523000C5F9F /* View Controllers */,
 				BE49B07E1EC0725500886933 /* Main.storyboard */,
 				BE49B0811EC0725500886933 /* Assets.xcassets */,
 				BE49B0831EC0725500886933 /* LaunchScreen.storyboard */,
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBCC57A1EC1A2DC00FB4E2F /* CalenderViewController.swift in Sources */,
 				BE49B07D1EC0725500886933 /* ViewController.swift in Sources */,
+				BE46BE0E1ED5F4CD000C5F9F /* LazyDoorViewController.swift in Sources */,
 				BE49B07B1EC0725500886933 /* AppDelegate.swift in Sources */,
+				BE46BE101ED5F51A000C5F9F /* PrinterViewController.swift in Sources */,
+				BE49B08F1EC0B27200886933 /* CheckInViewController.swift in Sources */,
+				BE49B08D1EC072A100886933 /* MenuCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +330,7 @@
 				BE49B08B1EC0725500886933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
